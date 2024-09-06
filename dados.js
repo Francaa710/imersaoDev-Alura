@@ -6,7 +6,7 @@ let dados = [
         Acessorios: "Controlador WIFI ROU-004",
         caracteristicas: "Exaustão forçada, 3 anos de garantia, compatível com acessório WIFI, Duto de exaustão 60mm, Bivolt automático, digital",
         link: "https://www.rinnai.com.br/aquecedores-a-gas/linha-digital/E10/",
-        tags: "casa apartamento "
+        tags: "casa apartamento digital eletrico elétrico "
     },
     {
         titulo: "Aquecedor a Gás E21 (21 Litros) - Rinnai",
@@ -15,7 +15,7 @@ let dados = [
         Acessorios: "Controlador WIFI ROU-003; Controlador WIFI ROU-004; Coletor externo frontal 60mm; Coletor externo lateral 60mm",
         caracteristicas: "Exaustão forçada, 3 anos de garantia, compatível com acessório WIFI, Duto de exaustão 60mm, Bivolt com chaveamento HH, Função solar, Acendimento automático, Digital",
         link: "https://www.rinnai.com.br/aquecedores-a-gas/linha-digital/e21-1/",
-        tags:""
+        tags:"casa apartamento digital eletrico elétrico"
     },
     {
         titulo: "Aquecedor a Gás LZ750BP (7,5 Litros) - Lorenzetti",
@@ -23,6 +23,6 @@ let dados = [
         Capacidade: "Gás Natural (GN): 7,5 l/min - Gás Liquefeito de Petróleo (GLP): 7 l/min",
         caracteristicas: "Exaustão natural, 2 anos de garantia, Duto de exaustão 90mm, Acendimento a pilha, manual",
         link: "https://www.lorenzetti.com.br/produto/lz-750bp",
-        tags: ""
+        tags: "casa natural mecanico mecânico pilha manual"
     }
 ];
