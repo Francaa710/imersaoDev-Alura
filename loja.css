@@ -21,8 +21,9 @@ header {
 }
 
 img {
-    width: 160px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem */
+    width: 100px; /* Define a largura da imagem */
+    height: 30px; /* Mantém a proporção da imagem */
+    padding-left: 24px; /* margem do input, no caso a da esquerda*/
   }
 
 .menu {
@@ -30,12 +31,18 @@ img {
     margin: 0;
     padding: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px; /*largura do item, no caso o cabecalho total */
+    
  
 }
 
 .menu-item {
     position: relative;
     margin-right: 2rem;
+    width: 250px;
+    
     
 }
 
@@ -79,21 +86,19 @@ img {
     background-color: #979797;
 }
 section input {
-    width: 8rem; /* Largura dos inputs */
-    border: none; /* Remove a borda padrão */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 5rem; /* Borda arredondada */
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    border-color: #979797;
     margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
     color: #979797 ; /* Cor do texto */
-    font-size: 10px; /* Tamanho da fonte */
-    box-sizing: border-box; /* Inclui padding e border na largura total */
+    font-size: 12px; /* Tamanho da fonte */
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
     padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
-    border-radius: 5rem; /* Borda arredondada */
+    border-radius: 10px; /* Borda arredondada */
     background-color: #bd2727; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
     font-size: 0.7rem; /* Tamanho da fonte */
@@ -162,9 +167,51 @@ footer {
     font-size: 8px; /* Tamanho da fonte */
 }
 .social-media {
-    list-style: none;
-    text-align: start; /* Alinha o texto ao centro */
+    
+    letter-spacing: 1px; /*espaçamento entre as letras */
+    color: #707070;
+    font-weight: bold;
+    line-height: 0.8; /* espaçamento entre as linhas*/ 
+    text-align: start; /* Alinha o texto */
     flex-direction: column; /* Organize as linhas verticalmente */
     display: flex;
     font-size: 11px; /* Tamanho da fonte */
+}
+
+#top {
+    border-bottom: 1px solid #ededed;
+}
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.box-inner {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+}
+.box-top {
+    padding: 0;
+    margin: 0;
+}
+.pull-right {
+    float: right !important;
+}
+.social {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+    margin: 0.3rem 0 0;
+}
+.social li {
+    float: left;
+    margin-right: 1.9rem;
+    list-style: none;
+}
+.social li:last-child {
+    margin: 0;
 }
