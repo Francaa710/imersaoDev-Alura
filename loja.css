@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 body {
-    font-family: Chakra Petch, sans-serif;
+    font-family: "Speedee", arial, helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 14px;
     align-items: center;
-    background-color: #c9c6c6;
+    background-color: #9797977a;
 }
 
 header {
@@ -15,7 +14,6 @@ header {
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    border-radius: 1.5rem;
     
     
 }
@@ -35,14 +33,12 @@ img {
     justify-content: center;
     width: 700px; /*largura do item, no caso o cabecalho total */
     
- 
 }
 
 .menu-item {
     position: relative;
     margin-right: 2rem;
     width: 250px;
-    
     
 }
 
@@ -53,8 +49,9 @@ img {
     display: block;
 }
 
-.menu-item:hover .dropdown {
-    display: block; /* Mostra o dropdown ao passar o mouse sobre o item */
+.menu-item:hover .dropdown { /*pseudoclasse hover, é quando passa o mouse por cima, 'dropdown é a abertura, a lista pra baixo, ira acontecer algo conforme abaixo, relacionado a caixa que abriu abaixo */
+    display: block; /* Mostra o dropdown ao passar o mouse sobre o item, no HTML tem a class DROPDOWN, mas so será mostrado, colocando o block*/
+    
 }
 
 .dropdown {
@@ -63,11 +60,11 @@ img {
     top: 100%;
     left: 0;
     background-color: #ffffff;
-    border-radius: 1.5rem;
+    border-radius: 1.5rem; /* arredondamento das bordas */
     padding: 0;
     margin: 0;
     display: none; /* Esconde o dropdown por padrão */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* a sombra da box que foi aberta */
 }
 
 .dropdown li {
@@ -169,13 +166,14 @@ footer {
 .social-media {
     
     letter-spacing: 1px; /*espaçamento entre as letras */
-    color: #707070;
+    color: #868585;
     font-weight: bold;
     line-height: 0.8; /* espaçamento entre as linhas*/ 
     text-align: start; /* Alinha o texto */
     flex-direction: column; /* Organize as linhas verticalmente */
     display: flex;
     font-size: 11px; /* Tamanho da fonte */
+    font-family: monospace;
 }
 
 #top {
@@ -214,4 +212,8 @@ footer {
 }
 .social li:last-child {
     margin: 0;
+}
+
+.icon-social {
+    background-color: #ffffff;
 }
