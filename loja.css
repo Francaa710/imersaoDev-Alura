@@ -1,52 +1,101 @@
 
 body {
-    font-family: "Speedee", arial, helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 14px;
     align-items: center;
     background-color: #9797977a;
+    min-width: 320px;
+    max-width: 100%;
+}
+
+.flexbox-container {
+    width: 100%;
+    padding: 1.2px 0px 2px 0px;
+    margin: 0;
+    height: 25px;
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.226);
+}
+
+.flexbox-item {
+    width: 100%;
+    margin: 0;
+}
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.icon-social {
+    background-color: #FFFFFF;
+    margin-right:20px;
+}
+
+.flex-3 {
+    display: flex;
+    gap: 15px;
+    height: 0px;
+}
+
+.social li {
+    display:flex;
+    margin:0;
+    list-style: none;
+    align-items: center;
 }
 
 header {
     background-color: #ffffff;
-    padding: 1rem;
+    padding: 15px 0px 5px 0px;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
-    
-    
+    font-size: 16px;     
+    border-radius: 0px 0px 22px 10px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+    width: 100%;
+    min-height: 50px;  
 }
 
-img {
-    width: 100px; /* Define a largura da imagem */
-    height: 30px; /* Mantém a proporção da imagem */
-    padding-left: 24px; /* margem do input, no caso a da esquerda*/
+
+.logo-header {
+    max-width: 100px; /* Define a largura da imagem */
+    height: 27px; /* Mantém a proporção da imagem */
+    padding-left: 20px; /* margem do input, no caso a da esquerda*/
   }
 
-.menu {
+  .menu-geral{
+    padding: 5px;
+  }
+
+ .menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    font-size: 14px;
+    padding-right: 5px;
+    padding-left: 5px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 700px; /*largura do item, no caso o cabecalho total */
-    
+    justify-content: space-between;
 }
 
 .menu-item {
     position: relative;
-    margin-right: 2rem;
-    width: 250px;
-    
+    padding-right: 100px;
+    padding-top: 10px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .menu-item a {
-    color: rgb(0, 0, 0);
+    color: rgb(51, 50, 50);
     text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
+    font-weight: 600;
+    max-width: 600px;
+    min-width: 320px;
+    margin: auto;
 }
 
 .menu-item:hover .dropdown { /*pseudoclasse hover, é quando passa o mouse por cima, 'dropdown é a abertura, a lista pra baixo, ira acontecer algo conforme abaixo, relacionado a caixa que abriu abaixo */
@@ -73,7 +122,7 @@ img {
 
 .dropdown a {
     padding: 0.5rem 1rem;
-    color: rgb(0, 0, 0);
+    color: rgb(51, 50, 50);
     border-radius: 1.5rem;
     display: block;
     text-decoration: none;
@@ -89,12 +138,14 @@ section input {
     margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
     color: #979797 ; /* Cor do texto */
     font-size: 12px; /* Tamanho da fonte */
+    margin-right: 5px;
 }
 
 /* Estiliza os botões dentro das seções */
 section button {
-    padding: 0.8rem 1.2rem; /* Espaçamento interno do botão */
+    padding: 10px 1.2rem; /* Espaçamento interno do botão */
     border: none; /* Remove a borda padrão */
+    margin-right: 32px;
     border-radius: 10px; /* Borda arredondada */
     background-color: #bd2727; /* Cor de fundo do botão */
     color: #F5F7F8; /* Cor do texto do botão */
@@ -106,6 +157,12 @@ section button {
 section button:hover {
     background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+main{
+    min-width: 300px;
+    max-width: 100%;
+    margin: auto;
 }
 
 /* Estiliza a caixa de resultados da pesquisa */
@@ -152,10 +209,10 @@ section button:hover {
 
 /* Estiliza o rodapé da página */
 footer {
-    background-color: #F5F7F8; /* Cor de fundo do rodapé */
+    background-color: #ffffff; /* Cor de fundo do rodapé */
     color: #292a2c; /* Cor do texto */
-    text-align: center; /* Alinha o texto ao centro */
-    padding: 0; /* Espaçamento interno */
+    text-align: center; /* Alinha o texto ao centro */ 
+    padding: 0px; /* Espaçamento interno */
     flex-direction: column; /* Organize as linhas verticalmente */
     display: flex;
     width: 100%; /* Largura total da página */
@@ -163,9 +220,12 @@ footer {
     bottom: 0; /* Alinha ao fundo da página */
     font-size: 8px; /* Tamanho da fonte */
 }
+
+.footer-line{
+    padding-bottom: 10px;
+}
+
 .social-media {
-    
-    letter-spacing: 1px; /*espaçamento entre as letras */
     color: #868585;
     font-weight: bold;
     line-height: 0.8; /* espaçamento entre as linhas*/ 
@@ -174,46 +234,10 @@ footer {
     display: flex;
     font-size: 11px; /* Tamanho da fonte */
     font-family: monospace;
-}
-
-#top {
-    border-bottom: 1px solid #ededed;
-}
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.box-inner {
-    display: inline-block;
-    vertical-align: top;
-    width: 100%;
-}
-.box-top {
-    padding: 0;
-    margin: 0;
-}
-.pull-right {
-    float: right !important;
-}
-.social {
-    padding: 0;
-    display: inline-block;
-    width: 100%;
-    text-align: left;
-    margin: 0.3rem 0 0;
-}
-.social li {
-    float: left;
-    margin-right: 1.9rem;
     list-style: none;
 }
-.social li:last-child {
-    margin: 0;
+
+.social-media li {
+    line-height: 13px;
 }
 
-.icon-social {
-    background-color: #ffffff;
-}
