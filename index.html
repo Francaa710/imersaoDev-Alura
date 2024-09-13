@@ -26,61 +26,28 @@
             </nav>
         </div>
     </div>
-    <header>
-    <div class="flexbox1">
-        <div class="flexbox2 flexbox-nav"><a href="#"><img class="logo-header" src="logosimples.png" alt="logo"></a></div>
-        <div class="flexbox2 menu-nav">
-            <nav>
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="#">PRODUTOS</a>
-                        <div>
-                        <ul class="dropdown">
-                            <li><a href="#">Chuveiros</a></li>
-                            <li><a href="#">Aquecedores a Gás</a></li>
-                            <li><a href="#">Torneiras Elétricas</a></li>
-                            <li><a href="#">Torneiras Metálicas</a></li>
-                            <li><a href="#">Acessórios</a></li>
-                        </ul>
-                        </div>
-                    </li>
-                    <li class="menu-item"><a href="#">SOBRE NÓS</a></li>
-                    <li class="menu-item"><a href="#">CONTATO</a></li>
+    <header>    
+        <h1>Meu Logo</h1>
+        <nav>
+            <a href="#">PRODUTOS</a>
+                <ul class="dropdown">
+                    <li><a href="#">Chuveiros</a></li>
+                    <li><a href="#">Aquecedores a Gás</a></li>
+                    <li><a href="#">Torneiras Elétricas</a></li>
+                    <li><a href="#">Torneiras Metálicas</a></li>
+                    <li><a href="#">Acessórios</a></li>
                 </ul>
-            </nav>
+            <a href="#">SOBRE NÓS</a>
+            <a href="#">CONTATO</a>
+        </nav>
+        <div class="botao">
+        <input type="text" placeholder="Itens" id="campo-pesquisa">
+        <button onclick="pesquisar()">Pesquisar</button>
+        <!--a função pesquisar nao é do JS, nos que fizemos essa função, agora precisa explicar oq ela faz -->
         </div>
-        <div class="flexbox2 flex4">
-            <input type="text" placeholder="Itens" id="campo-pesquisa">
-            <button onclick="pesquisar()">Pesquisar</button>
-            <!--a função pesquisar nao é do JS, nos que fizemos essa função, agora precisa explicar oq ela faz -->
-        </div>
-    </div>
     </header>
     <main>
         <section class="resultados-pesquisa" id = "resultados-pesquisa">
-            <!--<div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Aquecedor a Gás E10 (10 Litros) - Rinnai</a>
-                </h2>
-                <p class="descricao-meta">Quando se trata de aquecer seu banho de maneira eficiente, um aquecedor de água a gás é a escolha certa. Com o controle de temperatura preciso e sistemas de segurança integrados, o aquecedor digital Rinnai de 10 litros por minuto é o primeiro desta categoria no mercado brasileiro.</p>
-                <a href="https://www.rinnai.com.br/aquecedores-a-gas/linha-digital/E10/" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Aquecedor a Gás E21 (21 Litros) - Rinnai</a>
-                </h2>
-                <p class="descricao-meta">Este aquecedor de água a gás oferece todos os benefícios para um banho confortável. Com o primeiro sistema de trocador de calor coil-less do mercado e uma câmara de combustão com isolamento térmico para potencializar o calor gerado, o aquecedor digital E21 proporciona o conforto a qualidade e a segurança que você precisa.
-
-                    O E21 é o modelo de aquecedor a gás Rinnai mais vendido no Brasil.</p>
-                <a href="https://www.rinnai.com.br/aquecedores-a-gas/linha-digital/e21-1/" target="_blank">Mais informações</a>
-            </div>
-            <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">Aquecedor a Gás LZ750BP (7,5 Litros) - Lorenzetti</a>
-                </h2>
-                <p class="descricao-meta">Este produto está preparado para funcionar em locais onde há pouca pressão de água como residências térreas e sobrados, tendo a chave Verão/Inverno e promovendo economia de gás.</p>
-                <a href="https://www.lorenzetti.com.br/produto/lz-750bp" target="_blank">Mais informações</a>
-            </div> -->
         </section>
     </main>
     <footer>

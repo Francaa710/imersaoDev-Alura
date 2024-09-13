@@ -1,20 +1,26 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
     background-color: #9797977a;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
 }
 
 .flexbox-container {
-    width: 100%;
+    width: 100vw;
     padding: 1.2px 0px 2px 0px;
     margin: 0;
     height: 25px;
     display: flex;
+    flex-flow: row nowrap;
     background-color: #FFFFFF;
     justify-content: space-between;
     border-bottom: 0.5px solid rgba(128, 128, 128, 0.226);
@@ -22,7 +28,7 @@ body {
 
 .flexbox-item {
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 .social {
     display: flex;
@@ -33,11 +39,12 @@ body {
 .icon-social {
     background-color: #FFFFFF;
     margin-right:20px;
+    padding-top: 13px;
 }
 
 .flex-3 {
     display: flex;
-    gap: 15px;
+    gap: 7px;
     height: 0px;
 }
 
@@ -50,91 +57,58 @@ body {
 
 header {
     background-color: #ffffff;
-    font-size: 16px;     
+    padding: 15px 0px 5px 0px;
+    display: flex;
+    justify-content: space-between;     
     border-radius: 0px 0px 22px 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116); 
-    height: 65px; 
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
+    flex-flow: row wrap;
+    color: black;
 }
 
-.flexbox1{
+header > h1 {
+    border: 1px dotted black;
+    flex: 0 0 200px;
+}
+
+header > nav{
+    border: 1px dotted black;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+header > nav > a {
+    background-color: black;
+    color: white;
     padding: 5px;
-    display: flex;
-}
-
-.flexbox2{
-    width: 80px;
-}
-
-.flexbox-nav {
-    height: 60px;
-}
-
-.logo-header {
-    max-width: 100%; /* Define a largura da imagem */
-    height: 27px; /* Mantém a proporção da imagem */
-    padding-left: 20px; /* margem do input, no caso a da esquerda*/
-  }
-
-  .menu-nav{
-    font-size: 15px;
-    width: 100%;
-    height: 60px;
-    align-self: flex-start;
-  }
-
-.flex4 {
-    display: flex;
-    padding-top: 13px;
-    height: 60px;
-}
-
-div input {
-    padding: 8px; /* Espaçamento interno */
-    border-radius: 10px; /* Borda arredondada */
-    border-color: #979797; /* Espaçamento abaixo dos inputs */
-    color: #979797 ; /* Cor do texto */
-    font-size: 12px; /* Tamanho da fonte */
-    margin-right: 5px;
-    height: 2px;
-}
-
-/* Estiliza os botões dentro das seções */
-div button {
-    padding: 0px 5px; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    border-radius: 10px; /* Borda arredondada */
-    background-color: #bd2727; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 0.7rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-    height: 20px;
-}
-
-/* Adiciona efeito hover ao botão de pesquisa */
-div button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
-}
-
- .menu {
-   display: flex;
-   list-style: none;
-   padding: 10px;
-   
-}
-
-.menu-item {
-    position: relative;
-    padding: 10px;
-}
-
-.menu-item a {
-    color: rgb(51, 50, 50);
+    margin: 5px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: 600;
-    max-width: 600px;
-    min-width: 320px;
-    margin: auto;
+    text-align: center;
+}
+
+header > nav > a:hover{
+    background-color: white;
+    color: black;
+    transition: background-color .5s;
+}
+
+header > nav > a:hover .dropdown{
+    display: block;
+}
+
+.botao {
+    border: 1px dotted black;
+    padding: 10px;
+    display: flex;
+}
+
+main{
+    background-color: rgb(231, 229, 229);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.226);
 }
 
 .menu-item:hover .dropdown { /*pseudoclasse hover, é quando passa o mouse por cima, 'dropdown é a abertura, a lista pra baixo, ira acontecer algo conforme abaixo, relacionado a caixa que abriu abaixo */
@@ -171,57 +145,6 @@ div button:hover {
     background-color: #979797;
 }
 
-
-
-
-main{
-    min-width: 300px;
-    max-width: 100%;
-    margin: auto;
-}
-
-/* Estiliza a caixa de resultados da pesquisa */
-.resultados-pesquisa {
-    width: 60rem; /* Largura máxima da caixa de resultados */
-    height: 46vh; /* Altura máxima da caixa de resultados */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-top: 1rem; /* Espaçamento acima da caixa de resultados */
-    padding: 1rem; /* Espaçamento interno */
-    border-radius: 0.6rem; /* Borda arredondada */
-}
-
-/* Estiliza cada item de resultado */
-.item-resultado {
-    background: #FFFFFF; /* Cor de fundo dos itens */
-    border-radius: 0.6rem; /* Borda arredondada */
-    padding: 1rem; /* Espaçamento interno */
-    margin-bottom: 1rem; /* Espaçamento abaixo dos itens */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
-}
-
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado h2 {
-    font-size: 1.5rem; /* Tamanho da fonte */
-    color: #222831; /* Cor do texto */
-}
-
-/* Estiliza os links dentro dos itens de resultado */
-.item-resultado a {
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    color: #30475E; /* Cor do texto dos links */
-}
-
-/* Estiliza os links quando são passados o mouse sobre */
-.item-resultado a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-}
-
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: #45474B; /* Cor do texto */
-    margin: 0.5rem 0; /* Margem acima e abaixo */
-}
-
 /* Estiliza o rodapé da página */
 footer {
     background-color: #ffffff; /* Cor de fundo do rodapé */
@@ -255,3 +178,4 @@ footer {
 .social-media li {
     line-height: 13px;
 }
+
