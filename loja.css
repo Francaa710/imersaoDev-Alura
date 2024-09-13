@@ -11,11 +11,10 @@ body {
     font-size: 1em;
     background-color: #9797977a;
     height: 100vh;
-    width: 100vw;
+    width: 99.5vw;
 }
 
 .flexbox-container {
-    width: 100vw;
     padding: 1.2px 0px 2px 0px;
     margin: 0;
     height: 25px;
@@ -177,5 +176,6 @@ footer {
 
 .social-media li {
     line-height: 13px;
+    padding-left: 10px;
 }
 
