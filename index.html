@@ -27,28 +27,34 @@
         </div>
     </div>
     <header>
-    <a href="#"><img class="logo-header" src="logosimples.png" alt="logo"></a>
-    <nav class="menu-geral">
-        <ul class="menu">
-            <li class="menu-item">
-                <a href="#">PRODUTOS</a>
-                <ul class="dropdown">
-                    <li><a href="#">Chuveiros</a></li>
-                    <li><a href="#">Aquecedores a Gás</a></li>
-                    <li><a href="#">Torneiras Elétricas</a></li>
-                    <li><a href="#">Torneiras Metálicas</a></li>
-                    <li><a href="#">Acessórios</a></li>
+    <div class="flexbox1">
+        <div class="flexbox2 flexbox-nav"><a href="#"><img class="logo-header" src="logosimples.png" alt="logo"></a></div>
+        <div class="flexbox2 menu-nav">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a href="#">PRODUTOS</a>
+                        <div>
+                        <ul class="dropdown">
+                            <li><a href="#">Chuveiros</a></li>
+                            <li><a href="#">Aquecedores a Gás</a></li>
+                            <li><a href="#">Torneiras Elétricas</a></li>
+                            <li><a href="#">Torneiras Metálicas</a></li>
+                            <li><a href="#">Acessórios</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                    <li class="menu-item"><a href="#">SOBRE NÓS</a></li>
+                    <li class="menu-item"><a href="#">CONTATO</a></li>
                 </ul>
-            </li>
-            <li class="menu-item"><a href="#">SOBRE NÓS</a></li>
-            <li class="menu-item"><a href="#">CONTATO</a></li>
-        </ul>
-    </nav>
-    <section>
-        <input type="text" placeholder="Itens" id="campo-pesquisa">
-        <button onclick="pesquisar()">Pesquisar</button>
-        <!--a função pesquisar nao é do JS, nos que fizemos essa função, agora precisa explicar oq ela faz -->
-    </section>
+            </nav>
+        </div>
+        <div class="flexbox2 flex4">
+            <input type="text" placeholder="Itens" id="campo-pesquisa">
+            <button onclick="pesquisar()">Pesquisar</button>
+            <!--a função pesquisar nao é do JS, nos que fizemos essa função, agora precisa explicar oq ela faz -->
+        </div>
+    </div>
     </header>
     <main>
         <section class="resultados-pesquisa" id = "resultados-pesquisa">

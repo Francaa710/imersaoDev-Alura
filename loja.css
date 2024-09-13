@@ -6,8 +6,7 @@ body {
     font-size: 14px;
     align-items: center;
     background-color: #9797977a;
-    min-width: 320px;
-    max-width: 100%;
+    width: 100%;
 }
 
 .flexbox-container {
@@ -23,7 +22,7 @@ body {
 
 .flexbox-item {
     width: 100%;
-    margin: 0;
+    margin: auto;
 }
 .social {
     display: flex;
@@ -51,42 +50,82 @@ body {
 
 header {
     background-color: #ffffff;
-    padding: 15px 0px 5px 0px;
-    display: flex;
-    justify-content: space-between;
     font-size: 16px;     
     border-radius: 0px 0px 22px 10px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116);
-    width: 100%;
-    min-height: 50px;  
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.116); 
+    height: 65px; 
 }
 
+.flexbox1{
+    padding: 5px;
+    display: flex;
+}
+
+.flexbox2{
+    width: 80px;
+}
+
+.flexbox-nav {
+    height: 60px;
+}
 
 .logo-header {
-    max-width: 100px; /* Define a largura da imagem */
+    max-width: 100%; /* Define a largura da imagem */
     height: 27px; /* Mantém a proporção da imagem */
     padding-left: 20px; /* margem do input, no caso a da esquerda*/
   }
 
-  .menu-geral{
-    padding: 5px;
+  .menu-nav{
+    font-size: 15px;
+    width: 100%;
+    height: 60px;
+    align-self: flex-start;
   }
 
- .menu {
-    list-style: none;
-    font-size: 14px;
-    padding-right: 5px;
-    padding-left: 5px;
+.flex4 {
     display: flex;
-    justify-content: space-between;
+    padding-top: 13px;
+    height: 60px;
+}
+
+div input {
+    padding: 8px; /* Espaçamento interno */
+    border-radius: 10px; /* Borda arredondada */
+    border-color: #979797; /* Espaçamento abaixo dos inputs */
+    color: #979797 ; /* Cor do texto */
+    font-size: 12px; /* Tamanho da fonte */
+    margin-right: 5px;
+    height: 2px;
+}
+
+/* Estiliza os botões dentro das seções */
+div button {
+    padding: 0px 5px; /* Espaçamento interno do botão */
+    border: none; /* Remove a borda padrão */
+    border-radius: 10px; /* Borda arredondada */
+    background-color: #bd2727; /* Cor de fundo do botão */
+    color: #F5F7F8; /* Cor do texto do botão */
+    font-size: 0.7rem; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    height: 20px;
+}
+
+/* Adiciona efeito hover ao botão de pesquisa */
+div button:hover {
+    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
+}
+
+ .menu {
+   display: flex;
+   list-style: none;
+   padding: 10px;
+   
 }
 
 .menu-item {
     position: relative;
-    padding-right: 100px;
-    padding-top: 10px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 10px;
 }
 
 .menu-item a {
@@ -131,33 +170,9 @@ header {
 .dropdown a:hover {
     background-color: #979797;
 }
-section input {
-    padding: 8px; /* Espaçamento interno */
-    border-radius: 10px; /* Borda arredondada */
-    border-color: #979797;
-    margin-bottom: 10px; /* Espaçamento abaixo dos inputs */
-    color: #979797 ; /* Cor do texto */
-    font-size: 12px; /* Tamanho da fonte */
-    margin-right: 5px;
-}
 
-/* Estiliza os botões dentro das seções */
-section button {
-    padding: 10px 1.2rem; /* Espaçamento interno do botão */
-    border: none; /* Remove a borda padrão */
-    margin-right: 32px;
-    border-radius: 10px; /* Borda arredondada */
-    background-color: #bd2727; /* Cor de fundo do botão */
-    color: #F5F7F8; /* Cor do texto do botão */
-    font-size: 0.7rem; /* Tamanho da fonte */
-    cursor: pointer; /* Muda o cursor para indicar que é clicável */
-}
 
-/* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #30475E; /* Muda a cor de fundo ao passar o mouse */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais intensa */
-}
+
 
 main{
     min-width: 300px;
@@ -240,4 +255,3 @@ footer {
 .social-media li {
     line-height: 13px;
 }
-
