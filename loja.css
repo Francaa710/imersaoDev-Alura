@@ -86,13 +86,13 @@ header > nav > a {
     text-align: center;
 }
 
-header > nav > a:hover{
+header > nav > a:hover {
     background-color: white;
     color: black;
     transition: background-color .5s;
 }
 
-header > nav > a:hover .dropdown{
+.dropdown{
     display: block;
 }
 
